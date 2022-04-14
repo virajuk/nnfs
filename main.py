@@ -6,6 +6,9 @@ weights = np.array([[0.2, 0.8, -0.5, 1],
                     [-0.26, -0.27, 0.17, 0.87]])
 biases = np.array([2])
 
+# print(inputs.shape)
+# print(weights.shape)
+
 outputs = np.dot(weights, inputs) + biases
 print(type(outputs))
 print(outputs)
