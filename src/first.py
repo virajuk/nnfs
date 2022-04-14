@@ -4,12 +4,14 @@ import nnfs
 from nnfs.datasets import spiral_data
 import matplotlib.pyplot as plt
 
+from src.layer_dense import LayerDense
+
 nnfs.init()
 
 X, y = spiral_data(samples=100, classes=3)
 
-print(X[99])
-print(y[99])
+dense1 = LayerDense(2, 3)
 
-# plt.scatter(X[:, 0], X[:, 1], c=y, cmap='brg')
-# plt.show()
+dense1.forward(X)
+
+print(dense1.output[:3])
