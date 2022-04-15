@@ -1,4 +1,5 @@
 import numpy as np
+from mylib import LayerDense
 
 a = [1, 2, 3]
 # print(a)

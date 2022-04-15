@@ -4,7 +4,7 @@ import nnfs
 from nnfs.datasets import spiral_data
 import matplotlib.pyplot as plt
 
-from src.layer_dense import LayerDense
+from mylib import LayerDense
 
 nnfs.init()
 
@@ -14,4 +14,4 @@ dense1 = LayerDense(2, 3)
 
 dense1.forward(X)
 
-print(dense1.output[:3])
+print(len(dense1.output))
