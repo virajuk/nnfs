@@ -4,5 +4,5 @@ import numpy as np
 class ActivationStep:
 
     def forward(self, inputs):
-        pass
-        # self.output = np.maximum(0, inputs)
+
+        return np.heaviside(inputs, 0)
