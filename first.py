@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 from mylib import LayerDense
 from mylib import ActivationStep
+from mylib import ActivationSigmoid
 
 # nnfs.init()
 #
@@ -18,7 +19,7 @@ from mylib import ActivationStep
 # print(len(dense1.output))
 
 
-step = ActivationStep()
+step = ActivationSigmoid()
 
 # inputs = np.array([-0.2])
 # inputs = np.array([-1, 0, 0.3, 2.5])
