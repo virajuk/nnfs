@@ -7,4 +7,5 @@ class ActivationReLU:
     # Forward pass
     def forward(self, inputs):
 
+        # calculate output values from input
         self.output = np.maximum(0, inputs)
