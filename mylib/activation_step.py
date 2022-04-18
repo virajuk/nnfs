@@ -5,4 +5,4 @@ class ActivationStep:
 
     def forward(self, inputs):
 
-        return np.heaviside(inputs, 0)
+        self.output = np.heaviside(inputs, 0)

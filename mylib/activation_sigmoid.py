@@ -5,4 +5,4 @@ class ActivationSigmoid:
 
     def forward(self, inputs):
 
-        return 1/(1 + np.exp(-inputs))
+        self.output = 1/(1 + np.exp(-inputs))

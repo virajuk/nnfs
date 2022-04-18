@@ -10,7 +10,7 @@ from mylib import ActivationSigmoid
 
 # nnfs.init()
 #
-# X, y = spiral_data(samples=100, classes=3)
+X, y = spiral_data(samples=100, classes=3)
 #
 # dense1 = LayerDense(2, 3)
 #
@@ -23,7 +23,11 @@ step = ActivationSigmoid()
 
 # inputs = np.array([-0.2])
 # inputs = np.array([-1, 0, 0.3, 2.5])
-inputs = np.array([[0, 1.21, 2.385],
-                 [8.9, -1.81, 0.2],
-                 [1.41, 2.051, 0.026]])
-print(step.forward(inputs))
+inputs = np.array([[0, 1.21, -700],
+                   [4008.9, -1.81, 0.2],
+                   [1, 2.051, 20]])
+step.forward(X)
+
+print(X.shape)
+
+print(step.output[0:2])
