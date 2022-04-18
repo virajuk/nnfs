@@ -30,4 +30,3 @@ inputs = np.array([[0, 1.21, 2.385],
 print(step.forward(inputs))
 
 print("voila")
-
