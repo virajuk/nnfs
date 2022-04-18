@@ -27,3 +27,5 @@ inputs = np.array([[0, 1.21, 2.385],
                  [8.9, -1.81, 0.2],
                  [1.41, 2.051, 0.026]])
 print(step.forward(inputs))
+
+print("voila")
