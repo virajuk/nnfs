@@ -23,11 +23,11 @@ step = ActivationSigmoid()
 
 # inputs = np.array([-0.2])
 # inputs = np.array([-1, 0, 0.3, 2.5])
-inputs = np.array([[0, 1.21, -700],
-                   [4008.9, -1.81, 0.2],
-                   [1, 2.051, 20]])
-step.forward(X)
 
-print(X.shape)
+inputs = np.array([[0, 1.21, 2.385],
+                 [8.9, -1.81, 0.2],
+                 [1.41, 2.051, 0.026]])
+print(step.forward(inputs))
 
-print(step.output[0:2])
+print("voila")
+
