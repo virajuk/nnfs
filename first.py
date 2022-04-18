@@ -7,26 +7,19 @@ import matplotlib.pyplot as plt
 from mylib import LayerDense
 from mylib import ActivationStep
 from mylib import ActivationSigmoid
+from mylib import ActivationReLU
 
-# nnfs.init()
-#
+nnfs.init()
+
 X, y = spiral_data(samples=100, classes=3)
-#
-# dense1 = LayerDense(2, 3)
-#
-# dense1.forward(X)
-#
-# print(len(dense1.output))
 
+dense1 = LayerDense(2, 3)
 
-step = ActivationSigmoid()
+dense1.forward(X)
 
-# inputs = np.array([-0.2])
-# inputs = np.array([-1, 0, 0.3, 2.5])
+step = ActivationReLU()
 
-inputs = np.array([[0, 1.21, 2.385],
-                   [8.9, -1.81, 0.2],
-                   [1.41, 2.051, 0.026]])
-print(step.forward(inputs))
+step.forward(dense1.output)
 
-print("voila")
+print(dense1.output[100:110])
+print(step.output[100:110])
