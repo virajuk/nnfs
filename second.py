@@ -21,5 +21,5 @@ print(exp_values)
 denominator = np.sum(exp_values, axis=1, keepdims=True)
 print(denominator)
 
-# softmax00 = numerator / denominator
-# print(softmax00)
+softmax00 = exp_values / denominator
+print(softmax00)
