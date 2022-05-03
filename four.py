@@ -11,8 +11,8 @@ loss = -(math.log(softmax_output[0])*target_output[0] +
          math.log(softmax_output[1])*target_output[1] +
          math.log(softmax_output[2])*target_output[2])
 
-# print(loss)
-# print(math.log10(100))
+print(loss)
+print(math.log10(100))
 
 softmax_outputs = np.array([[0.7, 0.1, 0.2],
                             [0.1, 0.5, 0.4],
