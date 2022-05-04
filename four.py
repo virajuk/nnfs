@@ -19,10 +19,20 @@ if len(class_targets.shape) == 1:
 elif len(class_targets.shape) == 2:
     correct_confidences = np.sum(softmax_outputs*class_targets, axis=1)
 
-print(correct_confidences)
+# print(correct_confidences)
 
 neg_log = -np.log(correct_confidences)
-print(neg_log)
+# print(neg_log)
 
 average_loss = np.mean(neg_log)
-print(average_loss)
+# print(average_loss)
+
+my_log = -np.log(1e-7)
+# print(my_log)
+
+# print(-np.log(1))
+# print(-np.log(1+1e-7))
+
+y_pred = [1, 0.1, 0.2]
+y_pred_clipped = np.clip(y_pred, 1e-7, 1-1e-7)
+print(y_pred_clipped)
