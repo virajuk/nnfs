@@ -2,6 +2,8 @@ import math
 
 import numpy as np
 
+from mylib import LossCategoricalCrossEntropy
+
 softmax_outputs = np.array([[0.7, 0.1, 0.2],
                             [0.1, 0.5, 0.4],
                             [0.02, 0.9, 0.08],
@@ -35,4 +37,8 @@ my_log = -np.log(1e-7)
 
 y_pred = [1, 0.1, 0.2]
 y_pred_clipped = np.clip(y_pred, 1e-7, 1-1e-7)
-print(y_pred_clipped)
+# print(y_pred_clipped)
+
+loss_function = LossCategoricalCrossEntropy()
+loss = loss_function.calculate(softmax_outputs, class_targets)
+print(loss)
