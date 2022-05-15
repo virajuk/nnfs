@@ -1,7 +1,7 @@
 import numpy as np
 
 from logs import get_logger
-logger = get_logger()
+logger = get_logger('my_app')
 
 
 # Softmax activation

@@ -1,7 +1,7 @@
 import numpy as np
 
 from logs import get_logger
-logger = get_logger()
+logger = get_logger('my_app')
 
 
 # RELU Activation
@@ -12,3 +12,4 @@ class ActivationReLU:
 
         # calculate output values from input
         self.output = np.maximum(0, inputs)
+        logger.info(f"{self.__class__.__name__} Length of output : {len(self.output)}")

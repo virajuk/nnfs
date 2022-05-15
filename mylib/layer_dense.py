@@ -2,7 +2,7 @@ import numpy as np
 import nnfs
 
 from logs import get_logger
-logger = get_logger()
+logger = get_logger('my_app')
 
 
 class LayerDense:
@@ -13,3 +13,4 @@ class LayerDense:
 
     def forward(self, inputs):
         self.output = np.dot(inputs, self.weights) + self.biases
+        logger.info(f"{self.__class__.__name__} Length of output : {len(self.output)}")
