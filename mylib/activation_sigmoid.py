@@ -1,5 +1,8 @@
 import numpy as np
 
+from logs import get_logger
+logger = get_logger()
+
 
 # Sigmoid activation
 class ActivationSigmoid:

@@ -1,6 +1,9 @@
 import numpy as np
 import nnfs
 
+from logs import get_logger
+logger = get_logger()
+
 
 class LayerDense:
 
