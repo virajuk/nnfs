@@ -1,10 +1,15 @@
 import numpy as np
 
+from logs import get_logger
+
+logger = get_logger()
+
 
 class Loss:
 
     def calculate(self, output, y):
 
+        logger.info("TESTING LOG")
         sample_losses = self.forward(output, y)
 
         data_loss = np.mean(sample_losses)
