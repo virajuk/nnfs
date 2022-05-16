@@ -8,7 +8,6 @@ class Loss:
 
     def calculate(self, output, y):
 
-        # logger.info("TESTING LOG")
         sample_losses = self.forward(output, y)
 
         data_loss = np.mean(sample_losses)
