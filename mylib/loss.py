@@ -12,6 +12,7 @@ class Loss:
         sample_losses = self.forward(output, y)
 
         data_loss = np.mean(sample_losses)
+        logger.info(f"{self.__class__.__name__} Layer output : {data_loss}")
 
         return data_loss
 

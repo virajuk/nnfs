@@ -15,3 +15,4 @@ class ActivationSoftmax:
         probabilities = exp_values / np.sum(exp_values, axis=1, keepdims=True)
 
         self.output = probabilities
+        logger.info(f"{self.__class__.__name__} Layer output : {self.output.shape}")

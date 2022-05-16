@@ -13,4 +13,4 @@ class LayerDense:
 
     def forward(self, inputs):
         self.output = np.dot(inputs, self.weights) + self.biases
-        logger.info(f"{self.__class__.__name__} Length of output : {len(self.output)}")
+        logger.info(f"{self.__class__.__name__} Layer output : {self.output.shape}")
