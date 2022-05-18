@@ -42,3 +42,6 @@ y_pred_clipped = np.clip(y_pred, 1e-7, 1-1e-7)
 loss_function = LossCategoricalCrossEntropy()
 loss = loss_function.calculate(softmax_outputs, class_targets)
 print(loss)
+
+if __name__ == '__main__':
+    pass
