@@ -41,3 +41,6 @@ if len(y.shape) == 2:
 accuracy = np.mean(predictions == y)
 
 print(f"Acc : {accuracy}")
+
+if __name__ == '__main__':
+    pass
